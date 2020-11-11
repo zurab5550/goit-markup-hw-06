@@ -472,7 +472,7 @@ body {
   content: "";
   background-image: url(../img/spaceman.svg);
   display: block;
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -483,10 +483,6 @@ body {
 
 .function-item:not(:last-child) {
   margin-right: 30px;
-}
-
-.function-item {
-  max-width: 270px;
 }
 
 .function-title {
@@ -514,6 +510,7 @@ body {
 }
 
 .option-title {
+  margin-top: 0px;
   margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
@@ -543,10 +540,6 @@ body {
   flex-wrap: wrap;
   margin-right: -30px;
 }
-.image-position {
-  position: relative;
-  width: 300;
-}
 
 .image {
   display: block;
@@ -563,6 +556,7 @@ body {
 }
 
 .option-item {
+  position: relative;
   margin-right: 30px;
   margin-bottom: 30px;
   width: calc(100% / 3 - 30px);
@@ -604,7 +598,7 @@ body {
 .team-item-text {
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -638,7 +632,7 @@ body {
 }
 
 .social-networks-list-icon {
-  fill: var(--secondary-text-color);
+  fill: #afb1b8;
 }
 .social-networks-list-item:hover .social-networks-list-icon,
 .social-networks-list-item:focus .social-networks-list-icon {
@@ -722,6 +716,10 @@ body {
   color: var(--primary-text-color);
 }
 
+.clients-item {
+  width: 100%;
+}
+
 .clients-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -740,7 +738,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 100%;
   height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -770,7 +768,6 @@ body {
 
 .social-footer-list {
   display: flex;
-  justify-content: space-between;
 }
 
 .social-footer-link {
@@ -931,6 +928,11 @@ body {
   margin-bottom: 50px;
 }
 
+.button.link {
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+
 .features-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -949,7 +951,7 @@ body {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--white-color);
-  text-align: center;
+  text-align: left;
   margin: 0;
 }
 .overley {
@@ -966,18 +968,17 @@ body {
 
 .picture-link {
   position: relative;
-  width: 370px;
-  height: 294px;
+  width: 100%;
   overflow: hidden;
 }
 
-.picture-item:hover .overley {
+.picture-item:hover .overley,
+.picture-item:focus .overley {
   transform: translateY(0);
 }
 
 .feature-title-text {
-  padding: 20px 24px;
-  padding-right: 0px;
+  padding: 20px 24px 54px 24px;
 }
 
 .container-features {

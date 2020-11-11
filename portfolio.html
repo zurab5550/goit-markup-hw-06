@@ -12,43 +12,41 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <!--SHAPKA-->
     <header class="header">
-      <div class="container">
-        <section class="header-container">
-          <nav class="navigation">
-            <a href="./index.html" class="logo"><span class="accent">Web</span>Studio </a>
+      <div class="container header-container">
+        <nav class="navigation">
+          <a href="./index.html" class="logo"><span class="accent">Web</span>Studio </a>
 
-            <ul class="site-nav">
-              <li class="site-nav-item"><a href="./index.html" class="link">Студия</a></li>
-              <li class="site-nav-item"><a href="./portfolio.html" class="link link-current">Портфолио</a></li>
-              <li class="site-nav-item"><a href="" class="link">Контакты</a></li>
-            </ul>
-          </nav>
-
-          <ul class="contacts">
-            <li class="contacts-item">
-              <a href="mailto:info@devstudio.com" class="link">
-                <svg class="contacts-svg" width="16" height="12">
-                  <use href="./img/sprite.svg#envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="contacts-item">
-              <a href="tel:+38096111111" class="link">
-                <svg class="contacts-svg" width="10" height="16">
-                  <use href="./img/sprite.svg#smartphone"></use>
-                </svg>
-                +38096111111
-              </a>
-            </li>
+          <ul class="site-nav">
+            <li class="site-nav-item"><a href="./index.html" class="link">Студия</a></li>
+            <li class="site-nav-item"><a href="./portfolio.html" class="link link-current">Портфолио</a></li>
+            <li class="site-nav-item"><a href="" class="link">Контакты</a></li>
           </ul>
-        </section>
+        </nav>
+
+        <ul class="contacts">
+          <li class="contacts-item">
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="contacts-svg" width="16" height="12">
+                <use href="./img/sprite.svg#envelope"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="contacts-item">
+            <a href="tel:+38096111111" class="link">
+              <svg class="contacts-svg" width="10" height="16">
+                <use href="./img/sprite.svg#smartphone"></use>
+              </svg>
+              +38096111111
+            </a>
+          </li>
+        </ul>
       </div>
     </header>
     <!-- Telo -->
@@ -59,11 +57,11 @@
           <section class="container-features">
             <h1 class="visually-hidden">Portfolio</h1>
             <ul class="features-list">
-              <li class="features-item"><button type="button" class="link">Все</button></li>
-              <li class="features-item"><button type="button" class="link">Веб-сайты</button></li>
-              <li class="features-item"><button type="button" class="link">Приложения</button></li>
-              <li class="features-item"><button type="button" class="link">Дизайн</button></li>
-              <li class="features-item"><button type="button" class="link">Маркетинг</button></li>
+              <li class="features-item"><button type="button" class="button link">Все</button></li>
+              <li class="features-item"><button type="button" class="button link">Веб-сайты</button></li>
+              <li class="features-item"><button type="button" class="button link">Приложения</button></li>
+              <li class="features-item"><button type="button" class="button link">Дизайн</button></li>
+              <li class="features-item"><button type="button" class="button link">Маркетинг</button></li>
             </ul>
 
             <ul class="feature-pictures">
@@ -284,6 +282,26 @@
               </a>
             </li>
           </ul>
+        </section>
+        <section class="footer-subscribe">
+          <h2 class="footer-subscribe-title">Подпишитесь на рассылку</h2>
+          <form id="footer-subscribe-form" class="subscribe-form">
+            <input
+              class="footer-form-field"
+              name="user-name"
+              id="footer-email"
+              type="text"
+              placeholder="E-mail"
+              pattern="^[a-zA-ZА-Яа-яЁё\s]+$"
+              autocomplete="off"
+            />
+            <button class="button" type="submit">
+              Подписаться
+              <svg class="subscribe-footer-icon" width="24" height="24">
+                <use href="./img/sprite-telegram.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </section>
       </div>
     </footer>
