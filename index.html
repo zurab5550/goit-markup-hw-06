@@ -117,9 +117,9 @@
                 </label>
 
                 <label class="modal-label"
-                  >Комментарий
+                  ><span class="modal-label-text">Комментарий</span>
                   <textarea
-                    class="modal-textarea"
+                    class="modal-form-field modal-textarea"
                     name="comment"
                     id="comment"
                     rows="8"
@@ -127,10 +127,14 @@
                   ></textarea>
                 </label>
                 <label class="modal-checkbox">
-                  <input type="checkbox" name="policy" id="policy" />
+                  <input type="checkbox" class="checkbox-icon visually-hidden" name="policy" id="policy" />
+                  <span class="modal-policy-checkbox"></span>
+                  <span class="modal-policy-title"
+                    >Соглашаюсь с рассылкой и принимаю <a href="" class="modal-policy-accent"> Условия договора</a>
+                  </span>
                 </label>
               </form>
-              <button type="button" class="button">Отправить</button>
+              <button type="submit" class="button submit-button">Отправить</button>
             </div>
           </div>
         </div>
