@@ -634,9 +634,14 @@ body {
 .social-networks-list-icon {
   fill: #afb1b8;
 }
-.social-networks-list-item:hover .social-networks-list-icon,
-.social-networks-list-item:focus .social-networks-list-icon {
+.social-networks-list-link:hover .social-networks-list-icon,
+.social-networks-list-link:focus .social-networks-list-icon {
   fill: var(--white-color);
+}
+
+.social-networks-list-link:hover,
+.social-networks-list-link:focus {
+  background-color: var(--akcent-color);
 }
 
 .social-networks-list-icon {
@@ -781,8 +786,8 @@ body {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.social-footer-item:hover .social-footer-link,
-.social-footer-item:focus .social-footer-link {
+.social-footer-link:hover,
+.social-footer-link:focus {
   background-color: var(--akcent-color);
 }
 
